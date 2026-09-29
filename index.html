@@ -3,20 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Oldfield Motor Services · Servicing, MOTs &amp; Repairs in Denholme</title>
-<meta name="description" content="Servicing, MOTs and repairs for cars, motorbikes and commercial vehicles at Denholme Business Centre, Bradford BD13. Rated 4.9 on Google. Call 01274 830310.">
+<title>Oldfield Motor Services | Servicing, MOTs and Repairs in Denholme</title>
+<meta name="description" content="Family-run garage at Denholme Business Centre, Bradford BD13. Servicing, MOTs and repairs for cars, motorbikes and commercials. Rated 4.9 from 60 Google reviews. Call 01274 830310.">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#141617">
+<meta name="theme-color" content="#000000">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Oldfield Motor Services, Denholme">
+<meta property="og:description" content="Servicing, MOTs and repairs for cars, motorbikes and commercials. Family run, with over 60 years' experience.">
+<meta property="og:image" content="img/frontage.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;800&family=Saira:wght@400;500;600&display=swap">
-<link rel="preload" as="image" href="img/hero-lift.jpg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Audiowide&display=swap">
+<link rel="preload" as="image" href="img/frontage.jpg" imagesrcset="img/frontage-720.jpg 720w, img/frontage.jpg 1440w" imagesizes="(max-width:960px) 92vw, 540px">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "AutoRepair",
   "name": "Oldfield Motor Services Ltd",
+  "image": "img/frontage.jpg",
   "telephone": "+44 1274 830310",
   "email": "oldfieldmotorservices@gmail.com",
   "address": {"@type": "PostalAddress", "streetAddress": "Unit 18, Denholme Business Centre, Halifax Road", "addressLocality": "Denholme, Bradford", "postalCode": "BD13 4EN", "addressCountry": "GB"},
@@ -24,265 +28,389 @@
     {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:30"},
     {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "12:30"}
   ],
-  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "60"}
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "60"},
+  "sameAs": ["https://www.facebook.com/oldfield555"]
 }
 </script>
 <style>
 :root{
-  --ink:#141617; --ink-2:#1E2123; --ink-3:#2A2E31; --line:#33383C;
-  --paper:#F4F4F1; --card:#FFFFFF; --text:#16191B; --muted:#5E666B;
-  --green:#A1CA33; --green-hi:#B4DB4A; --green-ink:#141A03;
-  --cond:"Saira Condensed","Arial Narrow",Impact,sans-serif;
-  --body:"Saira","Segoe UI",system-ui,sans-serif;
+  --black:#000;
+  --panel:#141512;
+  --rule:#2B2D27;
+  --lime:#A1CA33;
+  --lime-dim:#7E9F24;
+  --white:#FFFFFF;
+  --grey:#B3B8AC;
+  --concrete:#E6E8E1;
+  --concrete-ink:#1A1B17;
+  --concrete-muted:#565A4F;
+  --plate:#F7C616;
+  --display:'Audiowide', 'Arial Black', sans-serif;
+  --body:'Archivo', 'Arial', sans-serif;
+  --badge:polygon(9% 0, 91% 0, 100% 58%, 87% 100%, 13% 100%, 0 58%);
+  --gutter:clamp(16px, 4vw, 40px);
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
-body{margin:0;background:var(--paper);color:var(--text);font:17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--black);color:var(--white);font:400 17px/1.6 var(--body);font-variation-settings:'wdth' 100}
+img{display:block;max-width:100%;height:auto}
+figure{margin:0}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--green);outline-offset:3px}
-.wrap{max-width:1180px;margin-inline:auto;padding-inline:max(20px,env(safe-area-inset-left))}
-h1,h2,h3{font-family:var(--cond);font-weight:800;text-transform:uppercase;line-height:.95;margin:0;letter-spacing:.005em;text-wrap:balance}
-.tel{white-space:nowrap;font-variant-numeric:tabular-nums}
-#nl-badge-frame{display:none!important}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+.wrap{width:100%;max-width:1200px;margin-inline:auto;padding-inline:var(--gutter)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
-.preview{background:var(--green);color:var(--green-ink);font:600 13px/1.3 var(--body);text-align:center;padding:8px 16px}
+h1,h2{font-family:var(--display);font-weight:400;line-height:1.05;margin:0;letter-spacing:-.005em}
+h2{font-size:clamp(30px,4.4vw,50px)}
+h3{font:760 21px/1.25 var(--body);font-variation-settings:'wdth' 112;margin:0}
+p{margin:0}
 
-header{position:sticky;top:0;z-index:20;background:rgba(20,22,23,.96);backdrop-filter:blur(8px);color:#fff;border-bottom:1px solid var(--line)}
-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
-.brand{display:flex;align-items:center;text-decoration:none}
-.brand img{display:block;height:66px;width:auto}
-.brand b{display:block;font:800 24px/1 var(--cond);text-transform:uppercase;letter-spacing:.02em}
-.brand small{display:block;font:600 11px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--green-hi);margin-top:4px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:800 19px/1 var(--cond);text-transform:uppercase;letter-spacing:.04em;text-decoration:none;border:0;border-radius:6px;padding:15px 22px;cursor:pointer;transition:background .15s,transform .12s}
-.btn:active{transform:translateY(1px)}
-.btn-green{background:var(--green);color:var(--green-ink)}
-.btn-green:hover{background:var(--green-hi)}
-.btn-dark{background:var(--ink-3);color:#fff}
-.btn-dark:hover{background:#3a3f43}
+/* Preview ribbon (remove at go-live) */
+.preview{background:var(--lime);color:var(--black);font:600 13px/1.35 var(--body);text-align:center;padding:7px 16px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:4px;border:0;font:760 16px/1 var(--body);font-variation-settings:'wdth' 110;text-decoration:none;cursor:pointer;transition:background .15s,color .15s}
 .btn svg{width:20px;height:20px;flex:none}
+.btn-lime{background:var(--lime);color:var(--black)}
+.btn-lime:hover{background:#B4DA4C}
+.btn-line{background:transparent;color:var(--white);box-shadow:inset 0 0 0 2px var(--rule)}
+.btn-line:hover{box-shadow:inset 0 0 0 2px var(--lime)}
 
-.hero{position:relative;background:var(--ink);color:#fff;overflow:hidden}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%;opacity:.5}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(20,22,23,.96) 0%,rgba(20,22,23,.75) 50%,rgba(20,22,23,.25) 100%)}
-.hero .wrap{position:relative;z-index:1;padding-block:clamp(64px,10vw,130px);display:grid;gap:26px;justify-items:start}
-.kicker{font:600 13px/1 var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--green-hi)}
-.hero h1{font-size:clamp(50px,8vw,104px);max-width:12ch}
-.hero h1 span{color:var(--green-hi)}
-.hero p{font-size:20px;max-width:40ch;margin:0;color:#D5DADC}
-.ctas{display:flex;flex-wrap:wrap;gap:12px}
-.ctas .btn{font-size:21px;padding:17px 24px}
+/* Header */
+header{position:sticky;top:0;z-index:30;background:rgba(0,0,0,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+header .wrap{display:flex;align-items:center;gap:28px;padding-block:10px}
+.brand img{height:62px;width:auto}
+header nav{display:flex;gap:26px;margin-left:auto}
+header nav a{font:600 15px/1 var(--body);text-decoration:none;color:var(--grey)}
+header nav a:hover{color:var(--white)}
+header .btn{min-height:46px;padding:0 18px}
 
-.proof{display:flex;flex-wrap:wrap;gap:12px}
-.chip{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:10px 14px;text-decoration:none;color:#fff}
-.chip b{font:800 24px/1 var(--cond)}
-.chip span{font-size:14px;line-height:1.25;color:#C9CFD2}
-.stars{color:#F6C343;letter-spacing:2px;font-size:15px}
+/* Hero */
+.hero{position:relative;padding-block:clamp(40px,7vw,96px) clamp(56px,8vw,110px);overflow:hidden}
+.hero::before,.hero::after{content:"";position:absolute;left:0;right:0;height:6px;background:var(--lime)}
+.hero::before{top:0;opacity:0}
+.hero::after{bottom:0}
+.hero .wrap{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(32px,5vw,72px);align-items:center}
+.hero h1{font-size:clamp(40px,6.4vw,82px)}
+.lede{margin-top:22px;max-width:34em;font-size:clamp(17px,1.6vw,20px);color:#D9DCD3}
+.proof{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:26px}
+.proof a{display:flex;align-items:baseline;gap:8px;text-decoration:none;font-size:15px;color:var(--grey)}
+.proof a:hover{color:var(--white)}
+.proof b{font:760 26px/1 var(--body);font-variation-settings:'wdth' 108;color:var(--white)}
+.stars{color:var(--lime);letter-spacing:1px;font-size:15px}
 
-.strip{background:var(--ink-2);color:#fff}
-.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
-.strip div{padding:22px 18px;border-left:1px solid var(--line)}
-.strip div:first-child{border-left:0;padding-left:0}
-.strip b{display:block;font:800 24px/1 var(--cond);text-transform:uppercase;color:var(--green-hi);margin-bottom:6px}
-.strip span{font-size:15px;color:#BFC6C9;line-height:1.35;display:block}
+/* The number plate */
+.plate-form{margin-top:34px;max-width:520px}
+.plate-form label{display:block;font:600 15px/1.3 var(--body);color:var(--grey);margin-bottom:10px}
+.plate-row{display:flex;gap:10px}
+.plate{flex:1;display:flex;align-items:stretch;background:var(--plate);border-radius:6px;box-shadow:inset 0 0 0 2px #1B1B1B, 0 0 0 1px rgba(255,255,255,.08);overflow:hidden;min-width:0}
+.plate span{display:flex;flex-direction:column;align-items:center;justify-content:center;width:40px;flex:none;background:#0B4EA2;color:#fff;font:700 13px/1 var(--body)}
+.plate span i{font-style:normal;font-size:9px;letter-spacing:.05em;margin-bottom:3px;color:#FFD500}
+.plate input{flex:1;min-width:0;border:0;background:transparent;color:#111;font:800 clamp(24px,3vw,32px)/1 var(--body);font-variation-settings:'wdth' 88;letter-spacing:.06em;text-transform:uppercase;text-align:center;padding:12px 10px;outline:none}
+.plate input::placeholder{color:#5C5A45}
+.plate:focus-within{box-shadow:inset 0 0 0 2px #1B1B1B, 0 0 0 3px var(--lime)}
+.plate-row .btn{min-height:auto}
 
-section{padding-block:clamp(64px,9vw,110px)}
-.head{display:flex;justify-content:space-between;align-items:end;gap:18px 48px;flex-wrap:wrap;margin-bottom:40px}
-.head h2{font-size:clamp(42px,6vw,76px)}
-.head p{margin:0;color:var(--muted);max-width:46ch}
+/* The badge-framed frontage photo: the signature element */
+.badge-photo{position:relative;justify-self:end;width:100%;max-width:540px}
+.badge-photo .frame{clip-path:var(--badge);background:var(--lime);padding:6px;aspect-ratio:1/1.02}
+.badge-photo .frame>div{clip-path:var(--badge);background:var(--white);padding:5px;height:100%}
+.badge-photo img{clip-path:var(--badge);width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.badge-photo figcaption{margin-top:14px;text-align:center;font-size:14px;color:var(--grey)}
+@media (prefers-reduced-motion:no-preference){
+  .badge-photo .frame{animation:badge-in .9s cubic-bezier(.2,.7,.2,1) both .1s}
+  @keyframes badge-in{from{opacity:0;transform:translateY(18px) scale(.96)}to{opacity:1;transform:none}}
+}
 
-.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.svc article{background:var(--card);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;border:1px solid #E3E5E2}
-.svc figure{margin:0;aspect-ratio:4/3;overflow:hidden;background:#ccc}
-.svc figure img{width:100%;height:100%;object-fit:cover}
-.svc .body{padding:20px 20px 24px;display:grid;gap:8px}
-.svc h3{font-size:30px}
-.svc p{margin:0;color:var(--muted);font-size:16px}
+/* Section scaffolding */
+section{padding-block:clamp(64px,9vw,120px);scroll-margin-top:84px}
+.intro{max-width:40em;margin-top:18px;color:var(--grey);font-size:18px}
 
-.book{background:var(--ink);color:#fff}
-.book .head p{color:#BFC6C9}
-.book-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
-form{background:var(--ink-2);border:1px solid var(--line);border-radius:12px;padding:30px;display:grid;gap:16px}
-form h3{font-size:32px}
-.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-label{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:14px;color:#D5DADC}
-input,select,textarea{font:inherit;font-size:17px;padding:13px 14px;border:1px solid var(--line);border-radius:6px;background:var(--ink);color:#fff;width:100%}
-input:focus,select:focus,textarea:focus{outline:none;border-color:var(--green)}
-input::placeholder,textarea::placeholder{color:#7C868B}
-textarea{min-height:90px;resize:vertical}
-.reg{font:800 22px/1 var(--cond);letter-spacing:.08em;text-transform:uppercase;background:#F6C343;color:#141617;border-color:#F6C343;text-align:center}
-.reg::placeholder{color:#6d5a1b}
-form .btn{width:100%;padding-block:18px}
-.fine{font-size:14px;color:#9AA3A7;margin:0}
-.contact-list{display:grid;gap:14px}
-.ci{display:grid;grid-template-columns:44px 1fr;gap:4px 14px;align-items:center;background:var(--ink-2);border:1px solid var(--line);border-radius:10px;padding:16px 18px;text-decoration:none}
-.ci svg{width:26px;height:26px;color:var(--green-hi);grid-row:span 2;justify-self:center}
-.ci small{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#9AA3A7}
-.ci b{font-size:19px;font-weight:600}
+/* What customers say (light concrete section) */
+.say{background:var(--concrete);color:var(--concrete-ink)}
+.say .intro{color:var(--concrete-muted)}
+.themes{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(36px,5vw,64px) clamp(32px,5vw,80px);margin-top:clamp(40px,5vw,64px)}
+.theme{border-top:4px solid var(--concrete-ink);padding-top:22px}
+.theme h3{font-size:clamp(22px,2.2vw,27px)}
+.theme blockquote{margin:16px 0 0;font-size:clamp(18px,1.6vw,20px);line-height:1.55}
+.theme blockquote p::before{content:"\201C"}
+.theme blockquote p::after{content:"\201D"}
+.theme cite{display:block;margin-top:12px;font-style:normal;font-size:15px;color:var(--concrete-muted)}
+.theme cite b{color:var(--concrete-ink);font-weight:650}
+.say-foot{display:flex;flex-wrap:wrap;gap:14px 30px;align-items:center;margin-top:clamp(44px,5vw,64px);padding-top:26px;border-top:1px solid #C5C8BE;font-size:16px}
+.say a:focus-visible{outline-color:var(--concrete-ink)}
+.say-foot a{font-weight:650;text-decoration-color:var(--lime-dim);text-decoration-thickness:2px;text-underline-offset:4px}
 
-.visit{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.card{background:var(--card);border:1px solid #E3E5E2;border-radius:12px;padding:30px}
-.card h3{font-size:34px;margin-bottom:16px}
-table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
-td{padding:11px 0;border-bottom:1px solid #EAECE9}
-td:last-child{text-align:right}
-tr:last-child td{border-bottom:0}
-tr.today td{font-weight:700;color:#1d7a2a}
-.status{display:inline-flex;align-items:center;gap:8px;font:600 13px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;padding:8px 12px;border-radius:999px;background:#EEF0EE;color:var(--muted);margin-bottom:14px}
-.status i{width:8px;height:8px;border-radius:50%;background:#9AA3A7}
-.status.open{background:#E3F6E6;color:#1d7a2a}
-.status.open i{background:var(--green)}
-.card address{font-style:normal;font-size:18px;line-height:1.55;margin-bottom:18px}
-.areas{color:var(--muted);font-size:16px;margin:0 0 20px}
+/* Services */
+.services .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(36px,6vw,90px);align-items:start}
+.services figure{margin:0;position:sticky;top:110px}
+.services figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-left:6px solid var(--lime)}
+.services figcaption{margin-top:12px;font-size:14px;color:var(--grey)}
+.svc-list{list-style:none;margin:36px 0 0;padding:0}
+.svc-list li{display:grid;grid-template-columns:minmax(150px,.8fr) 1.2fr;gap:8px 28px;padding:22px 0;border-top:1px solid var(--rule)}
+.svc-list li:last-child{border-bottom:1px solid var(--rule)}
+.svc-list h3{color:var(--white)}
+.svc-list p{color:var(--grey)}
+.brands{margin-top:34px;padding:22px 24px;background:var(--panel);border-left:4px solid var(--lime)}
+.brands p{color:#D9DCD3}
+.brands b{color:var(--white)}
 
-footer{background:var(--ink);color:#AEB6BA;padding-block:48px 110px;font-size:15px}
-footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}
-footer b{display:block;font:800 22px/1 var(--cond);text-transform:uppercase;color:#fff;margin-bottom:10px}
-footer a{color:#fff}
-.credit{grid-column:1/-1;border-top:1px solid var(--line);padding-top:20px;font-size:13px;color:#7C868B}
+/* Workshop strip */
+.workshop{padding-top:0}
+.workshop .head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
+.workshop .head p{color:var(--grey);max-width:30em}
+.strip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(260px,31%);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:36px;padding-bottom:14px;scrollbar-color:var(--lime-dim) var(--panel)}
+.strip figure{margin:0;scroll-snap-align:start}
+.strip img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.strip figcaption{margin-top:10px;font-size:15px;color:var(--grey)}
 
+/* Booking */
+.book{background:var(--panel);border-top:6px solid var(--lime)}
+.book .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(36px,6vw,90px);align-items:start}
+.book-form{margin-top:32px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.book-form .full{grid-column:1/-1}
+.field label{display:block;font:600 15px/1.3 var(--body);color:#D9DCD3;margin-bottom:8px}
+.field input,.field select,.field textarea{width:100%;background:var(--black);color:var(--white);border:1px solid #7A7F72;border-radius:4px;padding:14px;font:500 17px/1.3 var(--body)}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--lime);box-shadow:0 0 0 1px var(--lime)}
+.field .plate{min-height:62px}
+.field .plate input{font:800 26px/1 var(--body);font-variation-settings:'wdth' 88;letter-spacing:.06em;background:transparent;border:0;border-radius:0;color:#111;padding:12px 10px;box-shadow:none}
+.field .plate input:focus{border:0;box-shadow:none}
+.book-form .btn{justify-self:start}
+.small{font-size:14px;color:var(--grey)}
+.side h3{font-size:23px}
+.status{display:inline-flex;align-items:center;gap:9px;margin-top:14px;padding:8px 14px;border-radius:40px;background:var(--black);font:650 15px/1 var(--body)}
+.status i{width:9px;height:9px;border-radius:50%;background:#6B6F66}
+.status.open i{background:var(--lime);box-shadow:0 0 0 4px rgba(161,202,51,.2)}
+.hours{width:100%;border-collapse:collapse;margin-top:18px;font-size:16px}
+.hours td{padding:10px 0;border-bottom:1px solid var(--rule)}
+.hours td+td{text-align:right;color:#D9DCD3}
+.hours tr.today td{color:var(--lime);font-weight:700}
+.contact{list-style:none;margin:36px 0 0;padding:0;display:grid;gap:10px}
+.contact a{display:grid;grid-template-columns:44px 1fr;align-items:center;gap:14px;padding:14px 16px;background:var(--black);border-radius:4px;text-decoration:none;border:1px solid var(--rule)}
+.contact a:hover{border-color:var(--lime)}
+.contact svg{width:24px;height:24px;color:var(--lime);justify-self:center}
+.contact small{display:block;font-size:14px;color:var(--grey)}
+.contact b{font:700 18px/1.3 var(--body);word-break:break-word}
+
+/* Find us */
+.find .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,56px);align-items:stretch}
+.find address{font-style:normal;margin-top:20px;font-size:19px;line-height:1.55}
+.find .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.find figure{margin:34px 0 0}
+.find figure img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.find figcaption{margin-top:10px;font-size:14px;color:var(--grey)}
+.map{min-height:420px;border:0;width:100%;height:100%;filter:grayscale(.35) contrast(1.05)}
+
+/* Footer */
+footer{border-top:1px solid var(--rule);padding-block:44px 120px;color:var(--grey);font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:center}
+footer img{height:54px;width:auto}
+footer p+p{margin-top:4px}
+
+/* Mobile call bar */
 .callbar{display:none}
 
-@media (max-width:980px){
-  .svc{grid-template-columns:1fr 1fr}
-  .book-grid,.visit{grid-template-columns:1fr}
-  .strip .wrap{grid-template-columns:1fr 1fr}
-  .strip div:nth-child(3){border-left:0;padding-left:0}
-  .strip div:nth-child(n+3){border-top:1px solid var(--line)}
-  footer .wrap{grid-template-columns:1fr 1fr}
+@media (max-width:960px){
+  header nav{display:none}
+  header .btn-line{margin-left:auto}
+  .hero .wrap,.services .wrap,.book .wrap,.find .wrap{grid-template-columns:1fr}
+  .badge-photo{justify-self:center;max-width:460px;order:-1}
+  .services figure{position:static}
+  .services figure img{aspect-ratio:16/11}
+  .map{min-height:320px}
 }
-@media (max-width:640px){
+@media (max-width:700px){
   body{font-size:16px}
+  .brand img{height:52px}
   header .btn{display:none}
-  .brand img{height:54px}
-  .hero::after{background:linear-gradient(180deg,rgba(20,22,23,.6) 0%,rgba(20,22,23,.95) 65%)}
-  .svc{grid-template-columns:1fr}
-  .row{grid-template-columns:1fr}
-  form{padding:22px 18px}
-  .strip div{padding:16px 12px}
-  footer .wrap{grid-template-columns:1fr}
-  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(20,22,23,.97);border-top:1px solid var(--line)}
-  .callbar .btn{padding:15px 8px;font-size:18px}
+  .themes{grid-template-columns:1fr}
+  .svc-list li{grid-template-columns:1fr}
+  .plate-row{flex-direction:column}
+  .plate-row .btn{min-height:52px}
+  .book-form{grid-template-columns:1fr}
+  .book-form .btn{justify-self:stretch}
+  .strip{grid-auto-columns:78%}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(0,0,0,.94);border-top:1px solid var(--rule)}
+  .callbar .btn{min-height:50px}
 }
 </style>
 </head>
 <body>
 
-<div class="preview" role="note">Website preview for Oldfield Motor Services · made by Greg Rycroft · not live yet</div>
+<div class="preview" role="note">Preview built for Oldfield Motor Services by Greg Rycroft. Not live yet.</div>
 
 <header>
   <div class="wrap">
-    <a class="brand" href="#top"><img src="img/logo.svg" alt="Oldfield Motor Services" width="85" height="58"></a>
-    <a class="btn btn-green" href="tel:+441274830310">Call <span class="tel">01274 830310</span></a>
+    <a class="brand" href="#top"><img src="img/logo.svg" alt="Oldfield Motor Services" width="91" height="62"></a>
+    <nav aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#book">Book in</a>
+      <a href="#find">Find us</a>
+    </nav>
+    <a class="btn btn-line" href="https://wa.me/447910600543" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn btn-lime" href="tel:+441274830310">01274 830310</a>
   </div>
 </header>
 
 <main id="top">
+
 <div class="hero">
-  <img src="img/hero-lift.jpg" alt="Mechanic working underneath a car raised on a lift" width="1600" height="1067" fetchpriority="high">
   <div class="wrap">
-    <span class="kicker">Denholme · Bradford BD13</span>
-    <h1>Servicing, MOTs <span>&amp; repairs.</span></h1>
-    <p>Cars, motorbikes and commercial vehicles, looked after at our workshop at Denholme Business Centre.</p>
-    <div class="ctas">
-      <a class="btn btn-green" href="tel:+441274830310"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call <span class="tel">01274 830310</span></a>
-      <a class="btn btn-dark" href="#book">Book online</a>
+    <div>
+      <h1>Servicing, MOTs and repairs in Denholme</h1>
+      <p class="lede">A family-run garage with over 60 years' experience. Cars, motorbikes and commercial vehicles, all makes and models, from Unit 18 at Denholme Business Centre.</p>
+
+      <form class="plate-form" id="plateForm">
+        <label for="hero-reg">Book in with your registration</label>
+        <div class="plate-row">
+          <div class="plate"><span><i>★</i>UK</span><input id="hero-reg" name="reg" placeholder="YOUR REG" autocomplete="off" maxlength="8" aria-describedby="plate-help"></div>
+          <button class="btn btn-lime" type="submit">Start booking</button>
+        </div>
+        <p id="plate-help" class="sr">Takes you to the booking form with your registration filled in.</p>
+      </form>
+
+      <div class="proof">
+        <a href="https://www.google.com/search?q=Oldfield+Motor+Services+Ltd+Denholme+reviews" target="_blank" rel="noopener"><b>4.9</b><span class="stars" aria-hidden="true">★★★★★</span> 60 Google reviews</a>
+        <a href="https://www.facebook.com/oldfield555/reviews" target="_blank" rel="noopener"><b>100%</b> recommend on Facebook</a>
+      </div>
     </div>
-    <div class="proof">
-      <a class="chip" href="https://www.google.com/maps/place/Oldfield+Motor+Services+Ltd/@53.7951742,-1.8933935,17z" target="_blank" rel="noopener"><b>4.9</b><span><span class="stars" aria-hidden="true">★★★★★</span><br>60 Google reviews</span></a>
-      <span class="chip"><b>100%</b><span>recommend us<br>on Facebook</span></span>
-    </div>
+
+    <figure class="badge-photo">
+      <div class="frame"><div><img src="img/frontage.jpg" srcset="img/frontage-720.jpg 720w, img/frontage.jpg 1440w" sizes="(max-width:960px) 92vw, 540px" alt="The Oldfield Motor Services workshop at night, sign lit, with cars inside on the ramps" width="1440" height="1434" fetchpriority="high"></div></div>
+      <figcaption>Unit 18, Denholme Business Centre</figcaption>
+    </figure>
   </div>
 </div>
 
-<div class="strip">
+<section class="say" id="reviews">
   <div class="wrap">
-    <div><b>Servicing</b><span>Keep your car, bike or van running right</span></div>
-    <div><b>MOTs</b><span>Book your MOT with us</span></div>
-    <div><b>Repairs</b><span>From faults and warning lights to bigger jobs</span></div>
-    <div><b>All vehicles</b><span>Cars, motorbikes and commercial</span></div>
-  </div>
-</div>
+    <h2>What customers keep saying</h2>
+    <p class="intro">The same few things come up again and again in Oldfield's Google and Facebook reviews. Here they are, in customers' own words.</p>
 
-<section id="services">
+    <div class="themes">
+      <div class="theme">
+        <h3>A lift home while your car's in</h3>
+        <blockquote><p>Dropped my car off, mechanic took me back home. Took a couple of calls from Ryan the owner to keep me informed. Would use again.</p></blockquote>
+        <cite><b>S Ellis</b>, Google review</cite>
+      </div>
+      <div class="theme">
+        <h3>You're kept in the loop</h3>
+        <blockquote><p>They were also really transparent with prices and kept me in the loop via phone call. They made it proper stress free, thanks again guys.</p></blockquote>
+        <cite><b>James Bland</b>, Facebook review</cite>
+      </div>
+      <div class="theme">
+        <h3>Prices that are spot on</h3>
+        <blockquote><p>My first time booking in with Oldfield Motor Services for a MOT and service. Just to say I'll be back as the customer service and advice are excellent, also the price is spot on.</p></blockquote>
+        <cite><b>Les Pickles</b>, Google review</cite>
+      </div>
+      <div class="theme">
+        <h3>They'll stay late to get it done</h3>
+        <blockquote><p>Ryan and the team go that extra mile to make sure they deliver. They worked late on my car doing some specialist welding as well as other bits to make sure I could collect next day.</p></blockquote>
+        <cite><b>Chris B</b>, Google review</cite>
+      </div>
+    </div>
+
+    <div class="say-foot">
+      <span>Rated <b>4.9</b> from 60 Google reviews and <b>100%</b> recommended on Facebook.</span>
+      <a href="https://www.google.com/search?q=Oldfield+Motor+Services+Ltd+Denholme+reviews" target="_blank" rel="noopener">Read the Google reviews</a>
+      <a href="https://www.facebook.com/oldfield555/reviews" target="_blank" rel="noopener">Read the Facebook reviews</a>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <figure>
+      <img src="img/beetle-lift.jpg" srcset="img/beetle-lift-720.jpg 720w, img/beetle-lift.jpg 1072w" sizes="(max-width:960px) 92vw, 460px" alt="A VW Beetle raised on a lift in the Oldfield workshop" width="1072" height="1440" loading="lazy">
+      <figcaption>On the lift at Unit 18</figcaption>
+    </figure>
+    <div>
+      <h2>What we do</h2>
+      <p class="intro">Everyday jobs and awkward ones. Not sure what's wrong? Ring and describe it, and Ryan will give you straight advice.</p>
+      <ul class="svc-list">
+        <li><h3>Servicing</h3><p>Services for all makes and models, with dealer-trained know-how for VW Group, Kia, Hyundai and Vauxhall.</p></li>
+        <li><h3>MOTs</h3><p>Book your MOT, often alongside a service. Customers tell us the price is spot on.</p></li>
+        <li><h3>Repairs and diagnostics</h3><p>Warning lights, strange noises, brakes, clutches, exhausts and suspension. Tracked down and fixed.</p></li>
+        <li><h3>Welding</h3><p>Specialist welding and repairs, done properly, even when it means working late.</p></li>
+        <li><h3>Motorbikes</h3><p>Sports bikes, trail bikes and classics, with a dedicated bike lift in the workshop.</p></li>
+        <li><h3>Vans and commercials</h3><p>Commercial vehicles are a big part of what we do. Keeping your van on the road keeps you earning.</p></li>
+      </ul>
+      <div class="brands">
+        <p><b>Dealer-trained staff</b> for VW Group, Kia, Hyundai and Vauxhall. Every other make and model is welcome too.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="workshop" aria-labelledby="workshop-h">
   <div class="wrap">
     <div class="head">
-      <h2>What we do</h2>
-      <p>A local workshop that deals with the everyday jobs and the awkward ones. Ring or book online and we'll get you sorted.</p>
+      <h2 id="workshop-h">In the workshop</h2>
+      <p>Real jobs from Oldfield's own photos. Scroll along to see more.</p>
     </div>
-    <div class="svc">
-      <article>
-        <figure><img src="img/servicing.jpg" alt="Fresh oil being poured into a car engine" loading="lazy" width="1000" height="667"></figure>
-        <div class="body"><h3>Servicing</h3><p>Regular servicing to keep your vehicle reliable and running at its best.</p></div>
-      </article>
-      <article>
-        <figure><img src="img/repairs.jpg" alt="Mechanic working on a car engine" loading="lazy" width="1000" height="667"></figure>
-        <div class="body"><h3>MOTs</h3><p>Get your MOT booked in, and anything that needs sorting can be done in the same place.</p></div>
-      </article>
-      <article>
-        <figure><img src="img/tools.jpg" alt="Organised set of workshop sockets and tools" loading="lazy" width="1000" height="667"></figure>
-        <div class="body"><h3>Repairs</h3><p>Warning light on, strange noise, or something's just not right? Bring it in and we'll take a look.</p></div>
-      </article>
-      <article>
-        <figure><img src="img/bikes.jpg" alt="Mechanic working on a motorbike in a workshop" loading="lazy" width="1000" height="845"></figure>
-        <div class="body"><h3>Bikes &amp; vans</h3><p>Not just cars. We work on motorbikes and commercial vehicles too.</p></div>
-      </article>
+    <div class="strip" tabindex="0" aria-label="Workshop photos, scrollable">
+      <figure><img src="img/bike-lift.jpg" srcset="img/bike-lift-720.jpg 720w, img/bike-lift.jpg 1200w" sizes="(max-width:700px) 78vw, 380px" alt="Trail bike up on the bike lift" width="1200" height="1600" loading="lazy"><figcaption>Trail bike on the bike lift</figcaption></figure>
+      <figure><img src="img/vw-engine.jpg" srcset="img/vw-engine-720.jpg 720w, img/vw-engine.jpg 1440w" sizes="(max-width:700px) 78vw, 380px" alt="Work under the bonnet of a blue Volkswagen" width="1440" height="1440" loading="lazy"><figcaption>Under the bonnet of a VW</figcaption></figure>
+      <figure><img src="img/fireblade.jpg" srcset="img/fireblade-720.jpg 720w, img/fireblade.jpg 1024w" sizes="(max-width:700px) 78vw, 380px" alt="Honda Fireblade in Repsol colours among other bikes in the workshop" width="1024" height="768" loading="lazy"><figcaption>Honda Fireblade in for work</figcaption></figure>
+      <figure><img src="img/evo-engine.jpg" srcset="img/evo-engine-720.jpg 720w, img/evo-engine.jpg 1440w" sizes="(max-width:700px) 78vw, 380px" alt="Mitsubishi engine bay with red cam cover" width="1440" height="810" loading="lazy"><figcaption>Mitsubishi Evo engine bay</figcaption></figure>
+      <figure><img src="img/suzuki-rgv.jpg" srcset="img/suzuki-rgv-720.jpg 720w, img/suzuki-rgv.jpg 1024w" sizes="(max-width:700px) 78vw, 380px" alt="Suzuki RGV250 two-stroke sports bike" width="1024" height="768" loading="lazy"><figcaption>Suzuki RGV two-stroke</figcaption></figure>
+      <figure><img src="img/reception.jpg" srcset="img/reception-720.jpg 720w, img/reception.jpg 1440w" sizes="(max-width:700px) 78vw, 380px" alt="Oldfield Motor Services reception with the company banner" width="1440" height="1178" loading="lazy"><figcaption>Reception at Unit 18</figcaption></figure>
     </div>
   </div>
 </section>
 
 <section class="book" id="book">
   <div class="wrap">
-    <div class="head">
+    <div>
       <h2>Book in</h2>
-      <p>Fill this in and it opens WhatsApp with your details ready to send, or just give us a ring.</p>
-    </div>
-    <div class="book-grid">
-      <form id="bookForm">
-        <h3>Booking request</h3>
-        <label for="b-reg">Registration<input class="reg" id="b-reg" name="reg" placeholder="AB12 CDE" autocomplete="off" required></label>
-        <div class="row">
-          <label for="b-name">Your name<input id="b-name" name="name" autocomplete="name" required></label>
-          <label for="b-job">What do you need?
-            <select id="b-job" name="job">
-              <option>Service</option>
-              <option>MOT</option>
-              <option>Service and MOT</option>
-              <option>Repair or fault</option>
-              <option>Something else</option>
-            </select>
-          </label>
+      <p class="intro">Fill this in and it opens WhatsApp with your booking written out, ready to send to 07910 600543. Nothing is sent until you press send.</p>
+      <form class="book-form" id="bookForm">
+        <div class="field full">
+          <label for="b-reg">Registration</label>
+          <div class="plate"><span><i>★</i>UK</span><input id="b-reg" name="reg" placeholder="YOUR REG" autocomplete="off" maxlength="8" required></div>
         </div>
-        <div class="row">
-          <label for="b-vehicle">Vehicle<select id="b-vehicle" name="vehicle"><option>Car</option><option>Motorbike</option><option>Van or commercial</option></select></label>
-          <label for="b-date">Preferred day<input id="b-date" name="date" type="date"></label>
+        <div class="field">
+          <label for="b-name">Your name</label>
+          <input id="b-name" name="name" autocomplete="name" required>
         </div>
-        <label for="b-msg">Anything else?<textarea id="b-msg" name="msg" placeholder="e.g. Engine light came on this morning"></textarea></label>
-        <button class="btn btn-green" type="submit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11.3 11.3 0 0 0 4.3 3.8c1.6.7 2.2.7 3 .6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .1-1.2c0-.1-.2-.2-.4-.3z"/></svg>Send on WhatsApp</button>
-        <p class="fine">Opens WhatsApp with your booking ready to send to 07910 600543. Nothing is sent until you press send.</p>
+        <div class="field">
+          <label for="b-job">What do you need?</label>
+          <select id="b-job" name="job">
+            <option>Service</option>
+            <option>MOT</option>
+            <option>MOT and service</option>
+            <option>Repair or fault</option>
+            <option>Welding</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="b-vehicle">Vehicle</label>
+          <select id="b-vehicle" name="vehicle">
+            <option>Car</option>
+            <option>Motorbike</option>
+            <option>Van or commercial</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="b-date">Preferred day</label>
+          <input id="b-date" name="date" type="date">
+        </div>
+        <div class="field full">
+          <label for="b-msg">Anything else we should know?</label>
+          <textarea id="b-msg" name="msg" placeholder="For example: engine light came on this morning"></textarea>
+        </div>
+        <button class="btn btn-lime full" type="submit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.4-.2z"/></svg>Send on WhatsApp</button>
       </form>
-      <div class="contact-list">
-        <a class="ci" href="tel:+441274830310"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg><small>Workshop</small><b class="tel">01274 830310</b></a>
-        <a class="ci" href="tel:+447910600543"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 1H8a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm-4 21a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4-5H8V4h8z"/></svg><small>Mobile &amp; WhatsApp</small><b class="tel">07910 600543</b></a>
-        <a class="ci" href="mailto:oldfieldmotorservices@gmail.com"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg><small>Email</small><b>oldfieldmotorservices@gmail.com</b></a>
-      </div>
     </div>
-  </div>
-</section>
 
-<section id="visit">
-  <div class="wrap visit">
-    <div class="card">
-      <h3>Find us</h3>
-      <address>Oldfield Motor Services Ltd<br>Unit 18, Denholme Business Centre<br>Halifax Road, Denholme<br>Bradford BD13 4EN</address>
-      <p class="areas">Looking after drivers in Denholme, Queensbury and the surrounding area.</p>
-      <a class="btn btn-green" href="https://www.google.com/maps/dir/?api=1&amp;destination=Oldfield+Motor+Services+Ltd,+Denholme+BD13+4EN" target="_blank" rel="noopener">Get directions</a>
-    </div>
-    <div class="card">
+    <div class="side">
       <h3>Opening hours</h3>
       <span class="status" id="status"><i aria-hidden="true"></i><span id="status-text">Opening hours</span></span>
-      <table id="hours"><tbody>
+      <table class="hours" id="hours">
         <tr data-day="1"><td>Monday</td><td>9am to 5:30pm</td></tr>
         <tr data-day="2"><td>Tuesday</td><td>9am to 5:30pm</td></tr>
         <tr data-day="3"><td>Wednesday</td><td>9am to 5:30pm</td></tr>
@@ -290,28 +418,65 @@ footer a{color:#fff}
         <tr data-day="5"><td>Friday</td><td>9am to 5:30pm</td></tr>
         <tr data-day="6"><td>Saturday</td><td>9am to 12:30pm</td></tr>
         <tr data-day="0"><td>Sunday</td><td>Closed</td></tr>
-      </tbody></table>
+      </table>
+
+      <ul class="contact">
+        <li><a href="tel:+441274830310"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span><small>Workshop</small><b>01274 830310</b></span></a></li>
+        <li><a href="tel:+447910600543"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 1H8a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm-4 21a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4-5H8V4h8v13z"/></svg><span><small>Mobile and WhatsApp</small><b>07910 600543</b></span></a></li>
+        <li><a href="mailto:oldfieldmotorservices@gmail.com"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg><span><small>Email</small><b>oldfieldmotorservices@gmail.com</b></span></a></li>
+      </ul>
     </div>
   </div>
 </section>
+
+<section class="find" id="find">
+  <div class="wrap">
+    <div>
+      <h2>Find us</h2>
+      <address>Oldfield Motor Services Ltd<br>Unit 18, Denholme Business Centre<br>Halifax Road, Denholme<br>Bradford BD13 4EN</address>
+      <div class="ctas">
+        <a class="btn btn-lime" href="https://www.google.com/maps/dir/?api=1&amp;destination=Oldfield+Motor+Services+Ltd,+Denholme+BD13+4EN" target="_blank" rel="noopener">Get directions</a>
+        <a class="btn btn-line" href="https://www.facebook.com/oldfield555" target="_blank" rel="noopener">Follow on Facebook</a>
+      </div>
+      <figure>
+        <img src="img/roadside-sign.jpg" srcset="img/roadside-sign-720.jpg 720w, img/roadside-sign.jpg 1440w" sizes="(max-width:960px) 92vw, 560px" alt="The Oldfield Motor Services roadside sign on Halifax Road" width="1440" height="1080" loading="lazy">
+        <figcaption>Look for the sign on Halifax Road</figcaption>
+      </figure>
+    </div>
+    <iframe class="map" title="Map showing Oldfield Motor Services at Denholme Business Centre" src="https://www.google.com/maps?q=Oldfield+Motor+Services+Ltd,+Halifax+Road,+Denholme,+BD13+4EN&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
 </main>
 
 <footer>
   <div class="wrap">
-    <div><b>Oldfield Motor Services</b>Unit 18, Denholme Business Centre<br>Halifax Road, Bradford BD13 4EN</div>
-    <div><b>Call</b><a class="tel" href="tel:+441274830310">01274 830310</a><br><a class="tel" href="tel:+447910600543">07910 600543</a></div>
-    <div><b>Hours</b>Mon to Fri: 9am to 5:30pm<br>Sat: 9am to 12:30pm</div>
-    <p class="credit">Website by Greg Rycroft. Stock photos from Unsplash.</p>
+    <img src="img/logo.svg" alt="Oldfield Motor Services" width="80" height="54" loading="lazy">
+    <div>
+      <p>Oldfield Motor Services Ltd. Registered in England, company number 15001602.</p>
+      <p>Unit 18, Denholme Business Centre, Halifax Road, Denholme, Bradford BD13 4EN</p>
+    </div>
+    <p>Website by Greg Rycroft</p>
   </div>
 </footer>
 
 <div class="callbar">
-  <a class="btn btn-green" href="tel:+441274830310">Call</a>
-  <a class="btn btn-dark" href="#book">Book</a>
+  <a class="btn btn-lime" href="tel:+441274830310">Call</a>
+  <a class="btn btn-line" href="https://wa.me/447910600543" target="_blank" rel="noopener">WhatsApp</a>
 </div>
 
 <script>
-// Booking form opens WhatsApp with the details filled in
+// Hero plate: carry the registration down to the booking form
+document.getElementById('plateForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const reg = document.getElementById('hero-reg').value.trim();
+  const target = document.getElementById('b-reg');
+  if (reg) target.value = reg.toUpperCase();
+  document.getElementById('book').scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+  (reg ? document.getElementById('b-name') : target).focus({preventScroll: true});
+});
+
+// Booking form: write the booking out and open WhatsApp
 document.getElementById('bookForm').addEventListener('submit', function(e){
   e.preventDefault();
   const f = new FormData(this);
@@ -322,25 +487,36 @@ document.getElementById('bookForm').addEventListener('submit', function(e){
     'Vehicle: ' + f.get('vehicle'),
     'Job: ' + f.get('job')
   ];
-  if (f.get('date')) lines.push('Preferred day: ' + new Date(f.get('date')).toLocaleDateString('en-GB', {weekday:'long', day:'numeric', month:'long'}));
+  if (f.get('date')) lines.push('Preferred day: ' + new Date(f.get('date')).toLocaleDateString('en-GB', {timeZone:'UTC', weekday:'long', day:'numeric', month:'long', year:'numeric'}));
   if (f.get('msg')) lines.push('Notes: ' + f.get('msg'));
   window.location.href = 'https://wa.me/447910600543?text=' + encodeURIComponent(lines.join('\n'));
 });
 
-// Open or closed, worked out from the real opening hours (UK time)
+// Open or closed, worked out from the real opening hours (UK time), refreshed every minute
 (function(){
   const hours = {0:null, 1:[9,17.5], 2:[9,17.5], 3:[9,17.5], 4:[9,17.5], 5:[9,17.5], 6:[9,12.5]};
-  const parts = new Intl.DateTimeFormat('en-GB', {timeZone:'Europe/London', weekday:'short', hour:'numeric', minute:'numeric', hourCycle:'h23'}).formatToParts(new Date());
-  const get = t => parts.find(p => p.type === t).value;
-  const day = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(get('weekday'));
-  const now = +get('hour') + (+get('minute')) / 60;
-  const row = document.querySelector('#hours tr[data-day="' + day + '"]');
-  if (row) row.classList.add('today');
+  const names = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
   const s = document.getElementById('status'), t = document.getElementById('status-text');
-  const h = hours[day];
-  if (h && now >= h[0] && now < h[1]) { s.classList.add('open'); t.textContent = 'Open now · till ' + (h[1] === 12.5 ? '12:30pm' : '5:30pm'); }
-  else if (h && now < h[0]) { t.textContent = 'Opens 9am today'; }
-  else { t.textContent = 'Closed now'; }
+  function update(){
+    const parts = new Intl.DateTimeFormat('en-GB', {timeZone:'Europe/London', weekday:'short', hour:'numeric', minute:'numeric', hourCycle:'h23'}).formatToParts(new Date());
+    const get = k => parts.find(p => p.type === k).value;
+    const day = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(get('weekday'));
+    const now = +get('hour') + (+get('minute')) / 60;
+    document.querySelectorAll('#hours tr.today').forEach(r => r.classList.remove('today'));
+    const row = document.querySelector('#hours tr[data-day="' + day + '"]');
+    if (row) row.classList.add('today');
+    s.classList.remove('open');
+    const h = hours[day];
+    if (h && now >= h[0] && now < h[1]) { s.classList.add('open'); t.textContent = 'Open now, until ' + (h[1] === 12.5 ? '12:30pm' : '5:30pm'); }
+    else if (h && now < h[0]) { t.textContent = 'Closed now, opens 9am today'; }
+    else {
+      let d = (day + 1) % 7; while (!hours[d]) d = (d + 1) % 7;
+      t.textContent = 'Closed now, opens 9am ' + (d === (day + 1) % 7 ? 'tomorrow' : names[d]);
+    }
+  }
+  update();
+  setInterval(update, 60000);
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) update(); });
 })();
 </script>
 </body>
