@@ -156,6 +156,18 @@ section{padding-block:clamp(64px,9vw,120px);scroll-margin-top:84px}
 .brands p{color:#D9DCD3}
 .brands b{color:var(--white)}
 
+/* Courtesy car */
+.courtesy{background:var(--panel);border-top:6px solid var(--lime)}
+.courtesy .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,90px);align-items:center}
+.courtesy figure{margin:0}
+.courtesy img{width:100%;aspect-ratio:6/7;object-fit:cover;clip-path:var(--badge)}
+.courtesy .btn{margin-top:28px}
+.ggn{display:flex;flex-direction:column;gap:12px;margin-top:18px;padding:20px 24px;border:1px solid var(--rule);text-decoration:none}
+.ggn:hover{border-color:var(--lime)}
+.ggn img{width:min(260px,100%);height:auto}
+.ggn span{color:var(--grey);font-size:15px}
+@media (max-width:960px){.courtesy .wrap{grid-template-columns:1fr}.courtesy figure{max-width:460px}}
+
 /* Workshop strip */
 .workshop{padding-top:0}
 .workshop .head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
@@ -347,16 +359,32 @@ footer p+p{margin-top:4px}
         <li><h3>Servicing</h3><p>Services for all makes and models, with dealer-trained know-how for VW Group, Kia, Hyundai and Vauxhall.</p></li>
         <li><h3>MOTs</h3><p>Book your MOT, often alongside a service. Customers tell us the price is spot on.</p></li>
         <li><h3>Repairs and diagnostics</h3><p>Warning lights, strange noises, brakes, clutches, exhausts and suspension. Tracked down and fixed.</p></li>
+        <li><h3>Air conditioning</h3><p>Air con servicing and regassing, so it blows cold again when you need it.</p></li>
         <li><h3>Welding</h3><p>Specialist welding and repairs, done properly, even when it means working late.</p></li>
-        <li><h3>Courtesy car</h3><p>Need to keep moving while your car's in? Ask for the courtesy car when you book, subject to availability.</p></li>
         <li><h3>Vans and commercials</h3><p>Commercial vehicles are a big part of what we do. Keeping your van on the road keeps you earning.</p></li>
       </ul>
       <div class="brands">
         <p><b>Dealer-trained staff</b> for VW Group, Kia, Hyundai and Vauxhall. Every other make and model is welcome too.</p>
       </div>
+      <a class="ggn" href="https://www.greengaragenetwork.com/" target="_blank" rel="noopener">
+        <img src="img/ggn-footer-logo.png" alt="The Green Garage Network" width="444" height="76" loading="lazy">
+        <span>Member since 2022. An association of independent garages committed to reducing the environmental impact of car ownership.</span>
+      </a>
     </div>
   </div>
 </section>
+
+<section class="courtesy" aria-labelledby="courtesy-h">
+  <div class="wrap">
+    <figure><img src="img/courtesy-car.jpg" srcset="img/courtesy-car-720.jpg 720w, img/courtesy-car.jpg 1200w" sizes="(max-width:960px) 92vw, 520px" alt="The Oldfield courtesy car, a black VW Golf with the Oldfield Motor Services logo on the bonnet" width="1200" height="1400" loading="lazy"></figure>
+    <div>
+      <h2 id="courtesy-h">Keep moving with our courtesy car</h2>
+      <p class="intro">Need a car while yours is in the workshop? Ask for the courtesy car when you book. It's subject to availability, so the sooner you ask, the better.</p>
+      <a class="btn btn-lime" href="#book">Book in and ask for it</a>
+    </div>
+  </div>
+</section>
+
 
 <section class="workshop" aria-labelledby="workshop-h">
   <div class="wrap">
