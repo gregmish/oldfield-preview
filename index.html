@@ -192,6 +192,30 @@ section{padding-block:clamp(64px,9vw,120px);scroll-margin-top:84px}
 @media (max-width:960px){.team .wrap{grid-template-columns:1fr}}
 @media (max-width:700px){.team-grid{gap:14px}.team figcaption b{font-size:20px}}
 
+/* Polish: rhythm, phone clutter, compact services */
+.team figure .who{margin-top:14px;text-align:center;color:var(--concrete-muted);font-size:15px}
+.team figure .who b{display:block;font:400 26px/1.1 var(--display);color:var(--concrete-ink);margin-bottom:2px}
+.services{background:var(--concrete);color:var(--concrete-ink)}
+.services .intro{color:var(--concrete-muted)}
+.services .svc-list li{border-color:#C5C8BE}
+.services .svc-list h3{color:var(--concrete-ink)}
+.services .svc-list p{color:var(--concrete-muted)}
+.services .ggn{border-color:#C5C8BE;background:#fff}
+.services .ggn span{color:var(--concrete-muted)}
+.team{background:var(--concrete);color:var(--concrete-ink);padding-top:clamp(64px,9vw,120px)}
+.team .intro{color:var(--concrete-muted)}
+.workshop{padding-top:clamp(64px,9vw,120px)}
+.proof{margin-top:20px}
+@media (max-width:700px){
+  .hero-call{display:none}
+  .svc-list{display:grid;grid-template-columns:1fr 1fr;column-gap:18px}
+  .svc-list li{grid-template-columns:1fr;gap:4px;padding:16px 0}
+  .svc-list li:last-child{border-bottom:0}
+  .svc-list h3{font-size:17px}
+  .svc-list p{font-size:14px;line-height:1.45}
+  .team figure .who b{font-size:20px}
+}
+
 /* Booking */
 .book{background:var(--panel);border-top:6px solid var(--lime)}
 .book .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(36px,6vw,90px);align-items:start}
@@ -294,6 +318,11 @@ footer p+p{margin-top:4px}
       <h1>Servicing, MOTs and repairs in Denholme</h1>
       <p class="lede">A family-run garage with over 60 years' experience. Cars and commercial vehicles, all makes and models, from Unit 18 at Denholme Business Centre. Courtesy car available, just ask when you book.</p>
 
+      <div class="proof">
+        <a href="https://www.google.com/search?q=Oldfield+Motor+Services+Ltd+Denholme+reviews" target="_blank" rel="noopener"><b>4.9</b><span class="stars" aria-hidden="true">★★★★★</span> 60 Google reviews</a>
+        <a href="https://www.facebook.com/oldfield555/reviews" target="_blank" rel="noopener"><b>100%</b> recommend on Facebook</a>
+      </div>
+
       <div class="hero-call"><a class="btn btn-lime" href="tel:+441274830310">Call 01274 830310</a><a class="btn btn-line" href="https://wa.me/447910600543" target="_blank" rel="noopener">WhatsApp us</a></div>
 
       <form class="plate-form" id="plateForm">
@@ -307,15 +336,11 @@ footer p+p{margin-top:4px}
 
 
 
-      <div class="proof">
-        <a href="https://www.google.com/search?q=Oldfield+Motor+Services+Ltd+Denholme+reviews" target="_blank" rel="noopener"><b>4.9</b><span class="stars" aria-hidden="true">★★★★★</span> 60 Google reviews</a>
-        <a href="https://www.facebook.com/oldfield555/reviews" target="_blank" rel="noopener"><b>100%</b> recommend on Facebook</a>
-      </div>
+
     </div>
 
     <figure class="badge-photo">
       <div class="frame"><div><img src="img/frontage.jpg" srcset="img/frontage-720.jpg 720w, img/frontage.jpg 1440w" sizes="(max-width:960px) 92vw, 540px" alt="The Oldfield Motor Services workshop at night, sign lit, with cars inside on the ramps" width="1440" height="1434" fetchpriority="high"></div></div>
-      <figcaption>Unit 18, Denholme Business Centre</figcaption>
     </figure>
   </div>
 </div>
@@ -326,7 +351,6 @@ footer p+p{margin-top:4px}
   <div class="wrap">
     <figure>
       <img src="img/workshop-wide.jpg" srcset="img/workshop-wide-720.jpg 720w, img/workshop-wide.jpg 1200w" sizes="(max-width:960px) 92vw, 460px" alt="Inside the Oldfield workshop at Unit 18, with vehicles on the ramps" width="1200" height="1600" loading="lazy">
-      <figcaption>Inside the workshop at Unit 18</figcaption>
     </figure>
     <div>
       <h2>What we do</h2>
@@ -408,18 +432,18 @@ footer p+p{margin-top:4px}
       <p>Real jobs from Oldfield's own photos. Scroll along to see more.</p>
     </div>
     <div class="strip" tabindex="0" aria-label="Workshop photos, scrollable">
-      <figure><img src="img/aircon-golf.jpg" srcset="img/aircon-golf-720.jpg 720w, img/aircon-golf.jpg 1086w" sizes="(max-width:700px) 78vw, 380px" alt="Air conditioning machine connected to a blue VW Golf" width="1086" height="1448" loading="lazy"><figcaption>Air con regas on a Golf</figcaption></figure>
-      <figure><img src="img/turbo.jpg" srcset="img/turbo-720.jpg 720w, img/turbo.jpg 1086w" sizes="(max-width:700px) 78vw, 380px" alt="New turbocharger on the workbench" width="1086" height="1448" loading="lazy"><figcaption>A new turbo ready to fit</figcaption></figure>
-      <figure><img src="img/aligner.jpg" srcset="img/aligner-720.jpg 720w, img/aligner.jpg 1600w" sizes="(max-width:700px) 78vw, 380px" alt="Supertracker four-wheel laser alignment equipment on the workshop wall" width="1600" height="1200" loading="lazy"><figcaption>Four-wheel laser alignment kit</figcaption></figure>
-      <figure><img src="img/recovery-van.jpg" srcset="img/recovery-van-720.jpg 720w, img/recovery-van.jpg 1600w" sizes="(max-width:700px) 78vw, 380px" alt="The Oldfield Motor Services recovery van with the Oldfield logo" width="1600" height="741" loading="lazy"><figcaption>Our recovery van, shown with the new logo</figcaption></figure>
-      <figure><img src="img/maserati.jpg" srcset="img/maserati-720.jpg 720w, img/maserati.jpg 1200w" sizes="(max-width:700px) 78vw, 380px" alt="Black Maserati on the ramp in the workshop" width="1200" height="1600" loading="lazy"><figcaption>Maserati in for work</figcaption></figure>
-      <figure><img src="img/classic-engine.jpg" srcset="img/classic-engine-720.jpg 720w, img/classic-engine.jpg 1600w" sizes="(max-width:700px) 78vw, 380px" alt="Detailed engine bay of a classic green car" width="1600" height="1200" loading="lazy"><figcaption>Classic car engine bay</figcaption></figure>
-      <figure><img src="img/camper-lift.jpg" srcset="img/camper-lift-720.jpg 720w, img/camper-lift.jpg 1600w" sizes="(max-width:700px) 78vw, 380px" alt="Classic VW camper van raised on a lift in the workshop" width="1600" height="739" loading="lazy"><figcaption>Classic VW camper on the lift</figcaption></figure>
-      <figure><img src="img/snapon-neon.jpg" srcset="img/snapon-neon-720.jpg 720w, img/snapon-neon.jpg 1599w" sizes="(max-width:700px) 78vw, 380px" alt="Snap-on toolbox with a green neon Snap-on Tools sign" width="1599" height="899" loading="lazy"><figcaption>Snap-on kit in the workshop</figcaption></figure>
-      <figure><img src="img/brake-job.jpg" srcset="img/brake-job-720.jpg 720w, img/brake-job.jpg 1200w" sizes="(max-width:700px) 78vw, 380px" alt="Car with its front wheel off and brakes exposed during a repair" width="1200" height="1600" loading="lazy"><figcaption>Brakes and suspension work</figcaption></figure>
-      <figure><img src="img/workshop-floor.jpg" srcset="img/workshop-floor-720.jpg 720w, img/workshop-floor.jpg 1600w" sizes="(max-width:700px) 78vw, 380px" alt="Freshly painted workshop floor with a two-post lift" width="1600" height="1200" loading="lazy"><figcaption>Two-post lifts and a fresh floor</figcaption></figure>
-      <figure><img src="img/tyre-machine.jpg" srcset="img/tyre-machine-720.jpg 720w, img/tyre-machine.jpg 1599w" sizes="(max-width:700px) 78vw, 380px" alt="Tyre changing and wheel balancing machines" width="1599" height="899" loading="lazy"><figcaption>Tyre fitting and balancing kit</figcaption></figure>
-      <figure><img src="img/evo-engine.jpg" srcset="img/evo-engine-720.jpg 720w, img/evo-engine.jpg 1440w" sizes="(max-width:700px) 78vw, 380px" alt="Mitsubishi engine bay with red cam cover" width="1440" height="810" loading="lazy"><figcaption>Mitsubishi Evo engine bay</figcaption></figure>
+      <figure><img src="img/aircon-golf.jpg" srcset="img/aircon-golf-720.jpg 720w, img/aircon-golf.jpg 1086w" sizes="(max-width:700px) 78vw, 380px" alt="Air conditioning machine connected to a blue VW Golf" width="1086" height="1448" loading="lazy"></figure>
+      <figure><img src="img/turbo.jpg" srcset="img/turbo-720.jpg 720w, img/turbo.jpg 1086w" sizes="(max-width:700px) 78vw, 380px" alt="New turbocharger on the workbench" width="1086" height="1448" loading="lazy"></figure>
+      <figure><img src="img/aligner.jpg" srcset="img/aligner-720.jpg 720w, img/aligner.jpg 1600w" sizes="(max-width:700px) 78vw, 380px" alt="Supertracker four-wheel laser alignment equipment on the workshop wall" width="1600" height="1200" loading="lazy"></figure>
+      <figure><img src="img/recovery-van.jpg" srcset="img/recovery-van-720.jpg 720w, img/recovery-van.jpg 1600w" sizes="(max-width:700px) 78vw, 380px" alt="The Oldfield Motor Services recovery van with the Oldfield logo" width="1600" height="741" loading="lazy"></figure>
+      <figure><img src="img/maserati.jpg" srcset="img/maserati-720.jpg 720w, img/maserati.jpg 1200w" sizes="(max-width:700px) 78vw, 380px" alt="Black Maserati on the ramp in the workshop" width="1200" height="1600" loading="lazy"></figure>
+      <figure><img src="img/classic-engine.jpg" srcset="img/classic-engine-720.jpg 720w, img/classic-engine.jpg 1600w" sizes="(max-width:700px) 78vw, 380px" alt="Detailed engine bay of a classic green car" width="1600" height="1200" loading="lazy"></figure>
+      <figure><img src="img/camper-lift.jpg" srcset="img/camper-lift-720.jpg 720w, img/camper-lift.jpg 1600w" sizes="(max-width:700px) 78vw, 380px" alt="Classic VW camper van raised on a lift in the workshop" width="1600" height="739" loading="lazy"></figure>
+      <figure><img src="img/snapon-neon.jpg" srcset="img/snapon-neon-720.jpg 720w, img/snapon-neon.jpg 1599w" sizes="(max-width:700px) 78vw, 380px" alt="Snap-on toolbox with a green neon Snap-on Tools sign" width="1599" height="899" loading="lazy"></figure>
+      <figure><img src="img/brake-job.jpg" srcset="img/brake-job-720.jpg 720w, img/brake-job.jpg 1200w" sizes="(max-width:700px) 78vw, 380px" alt="Car with its front wheel off and brakes exposed during a repair" width="1200" height="1600" loading="lazy"></figure>
+      <figure><img src="img/workshop-floor.jpg" srcset="img/workshop-floor-720.jpg 720w, img/workshop-floor.jpg 1600w" sizes="(max-width:700px) 78vw, 380px" alt="Freshly painted workshop floor with a two-post lift" width="1600" height="1200" loading="lazy"></figure>
+      <figure><img src="img/tyre-machine.jpg" srcset="img/tyre-machine-720.jpg 720w, img/tyre-machine.jpg 1599w" sizes="(max-width:700px) 78vw, 380px" alt="Tyre changing and wheel balancing machines" width="1599" height="899" loading="lazy"></figure>
+      <figure><img src="img/evo-engine.jpg" srcset="img/evo-engine-720.jpg 720w, img/evo-engine.jpg 1440w" sizes="(max-width:700px) 78vw, 380px" alt="Mitsubishi engine bay with red cam cover" width="1440" height="810" loading="lazy"></figure>
     </div>
   </div>
 </section>
@@ -431,8 +455,8 @@ footer p+p{margin-top:4px}
       <p class="intro">The faces behind the spanners at Unit 18.</p>
     </div>
     <div class="team-grid">
-      <figure><img src="img/team-ryan.jpg" srcset="img/team-ryan-720.jpg 720w, img/team-ryan.jpg 1066w" sizes="(max-width:700px) 80vw, 340px" alt="Illustration of Ryan in Oldfield Motor Services workwear holding a Snap-on toolbox" width="1066" height="1600" loading="lazy"><figcaption><b>Ryan</b>Owner</figcaption></figure>
-      <figure><img src="img/team-jordan.jpg" srcset="img/team-jordan-720.jpg 720w, img/team-jordan.jpg 1024w" sizes="(max-width:700px) 80vw, 340px" alt="Illustration of Jordan in Oldfield Motor Services workwear holding a Snap-on toolbox" width="1024" height="1536" loading="lazy"><figcaption><b>Jordan</b>Part of the team</figcaption></figure>
+      <figure><img src="img/team-ryan.jpg" srcset="img/team-ryan-720.jpg 720w, img/team-ryan.jpg 1066w" sizes="(max-width:700px) 80vw, 340px" alt="Illustration of Ryan in Oldfield Motor Services workwear holding a Snap-on toolbox" width="1066" height="1600" loading="lazy"><p class="who"><b>Ryan</b>Owner</p></figure>
+      <figure><img src="img/team-jordan.jpg" srcset="img/team-jordan-720.jpg 720w, img/team-jordan.jpg 1024w" sizes="(max-width:700px) 80vw, 340px" alt="Illustration of Jordan in Oldfield Motor Services workwear holding a Snap-on toolbox" width="1024" height="1536" loading="lazy"><p class="who"><b>Jordan</b>Part of the team</p></figure>
     </div>
   </div>
 </section>
@@ -518,7 +542,6 @@ footer p+p{margin-top:4px}
       </div>
       <figure>
         <img src="img/frontage-dusk.jpg" srcset="img/frontage-dusk-720.jpg 720w, img/frontage-dusk.jpg 1200w" sizes="(max-width:960px) 92vw, 560px" alt="The Oldfield Motor Services unit at dusk, with the Green Garage Network registered member sign" width="1200" height="1600" loading="lazy">
-        <figcaption>Unit 18, with the Green Garage Network sign by the door</figcaption>
       </figure>
     </div>
     <iframe class="map" title="Map showing Oldfield Motor Services at Denholme Business Centre" src="https://www.google.com/maps?q=Oldfield+Motor+Services+Ltd,+Halifax+Road,+Denholme,+BD13+4EN&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
