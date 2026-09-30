@@ -165,6 +165,17 @@ section{padding-block:clamp(64px,9vw,120px);scroll-margin-top:84px}
 .strip img{width:100%;aspect-ratio:4/5;object-fit:cover}
 .strip figcaption{margin-top:10px;font-size:15px;color:var(--grey)}
 
+/* Team */
+.team{padding-top:0}
+.team .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,5vw,72px);align-items:center}
+.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,3vw,32px)}
+.team figure{margin:0}
+.team img{width:100%;aspect-ratio:2/3;object-fit:cover;object-position:top;clip-path:var(--badge);background:#fff}
+.team figcaption{margin-top:14px;text-align:center;color:var(--grey);font-size:15px}
+.team figcaption b{display:block;font:400 26px/1.1 var(--display);color:var(--white);margin-bottom:2px}
+@media (max-width:960px){.team .wrap{grid-template-columns:1fr}}
+@media (max-width:700px){.team-grid{gap:14px}.team figcaption b{font-size:20px}}
+
 /* Booking */
 .book{background:var(--panel);border-top:6px solid var(--lime)}
 .book .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(36px,6vw,90px);align-items:start}
@@ -179,6 +190,8 @@ section{padding-block:clamp(64px,9vw,120px);scroll-margin-top:84px}
 .field .plate input:focus{border:0;box-shadow:none}
 .book-form .btn{justify-self:start}
 .small{font-size:14px;color:var(--grey)}
+.field .check{display:flex;align-items:center;gap:12px;margin:0;font-weight:500;cursor:pointer}
+.field .check input{width:22px;height:22px;padding:0;accent-color:var(--lime);flex:none}
 .side h3{font-size:23px}
 .status{display:inline-flex;align-items:center;gap:9px;margin-top:14px;padding:8px 14px;border-radius:40px;background:var(--black);font:650 15px/1 var(--body)}
 .status i{width:9px;height:9px;border-radius:50%;background:#6B6F66}
@@ -261,7 +274,7 @@ footer p+p{margin-top:4px}
   <div class="wrap">
     <div>
       <h1>Servicing, MOTs and repairs in Denholme</h1>
-      <p class="lede">A family-run garage with over 60 years' experience. Cars, motorbikes and commercial vehicles, all makes and models, from Unit 18 at Denholme Business Centre.</p>
+      <p class="lede">A family-run garage with over 60 years' experience. Cars, motorbikes and commercial vehicles, all makes and models, from Unit 18 at Denholme Business Centre. Courtesy car available, just ask when you book.</p>
 
       <form class="plate-form" id="plateForm">
         <label for="hero-reg">Book in with your registration</label>
@@ -324,8 +337,8 @@ footer p+p{margin-top:4px}
 <section class="services" id="services">
   <div class="wrap">
     <figure>
-      <img src="img/beetle-lift.jpg" srcset="img/beetle-lift-720.jpg 720w, img/beetle-lift.jpg 1072w" sizes="(max-width:960px) 92vw, 460px" alt="A VW Beetle raised on a lift in the Oldfield workshop" width="1072" height="1440" loading="lazy">
-      <figcaption>On the lift at Unit 18</figcaption>
+      <img src="img/workshop-wide.jpg" srcset="img/workshop-wide-720.jpg 720w, img/workshop-wide.jpg 1200w" sizes="(max-width:960px) 92vw, 460px" alt="Inside the Oldfield workshop at Unit 18, with vehicles on the ramps" width="1200" height="1600" loading="lazy">
+      <figcaption>Inside the workshop at Unit 18</figcaption>
     </figure>
     <div>
       <h2>What we do</h2>
@@ -336,6 +349,7 @@ footer p+p{margin-top:4px}
         <li><h3>Repairs and diagnostics</h3><p>Warning lights, strange noises, brakes, clutches, exhausts and suspension. Tracked down and fixed.</p></li>
         <li><h3>Welding</h3><p>Specialist welding and repairs, done properly, even when it means working late.</p></li>
         <li><h3>Motorbikes</h3><p>Sports bikes, trail bikes and classics, with a dedicated bike lift in the workshop.</p></li>
+        <li><h3>Courtesy car</h3><p>Need to keep moving while your car's in? Ask for the courtesy car when you book, subject to availability.</p></li>
         <li><h3>Vans and commercials</h3><p>Commercial vehicles are a big part of what we do. Keeping your van on the road keeps you earning.</p></li>
       </ul>
       <div class="brands">
@@ -352,15 +366,31 @@ footer p+p{margin-top:4px}
       <p>Real jobs from Oldfield's own photos. Scroll along to see more.</p>
     </div>
     <div class="strip" tabindex="0" aria-label="Workshop photos, scrollable">
+      <figure><img src="img/camper-lift.jpg" srcset="img/camper-lift-720.jpg 720w, img/camper-lift.jpg 1600w" sizes="(max-width:700px) 78vw, 380px" alt="Classic VW camper van raised on a lift in the workshop" width="1600" height="739" loading="lazy"><figcaption>Classic VW camper on the lift</figcaption></figure>
+      <figure><img src="img/snapon-neon.jpg" srcset="img/snapon-neon-720.jpg 720w, img/snapon-neon.jpg 1599w" sizes="(max-width:700px) 78vw, 380px" alt="Snap-on toolbox with a green neon Snap-on Tools sign" width="1599" height="899" loading="lazy"><figcaption>Snap-on kit in the workshop</figcaption></figure>
+      <figure><img src="img/brake-job.jpg" srcset="img/brake-job-720.jpg 720w, img/brake-job.jpg 1200w" sizes="(max-width:700px) 78vw, 380px" alt="Car with its front wheel off and brakes exposed during a repair" width="1200" height="1600" loading="lazy"><figcaption>Brakes and suspension work</figcaption></figure>
+      <figure><img src="img/workshop-floor.jpg" srcset="img/workshop-floor-720.jpg 720w, img/workshop-floor.jpg 1600w" sizes="(max-width:700px) 78vw, 380px" alt="Freshly painted workshop floor with a two-post lift" width="1600" height="1200" loading="lazy"><figcaption>Two-post lifts and a fresh floor</figcaption></figure>
+      <figure><img src="img/tyre-machine.jpg" srcset="img/tyre-machine-720.jpg 720w, img/tyre-machine.jpg 1599w" sizes="(max-width:700px) 78vw, 380px" alt="Tyre changing and wheel balancing machines" width="1599" height="899" loading="lazy"><figcaption>Tyre fitting and balancing kit</figcaption></figure>
       <figure><img src="img/bike-lift.jpg" srcset="img/bike-lift-720.jpg 720w, img/bike-lift.jpg 1200w" sizes="(max-width:700px) 78vw, 380px" alt="Trail bike up on the bike lift" width="1200" height="1600" loading="lazy"><figcaption>Trail bike on the bike lift</figcaption></figure>
-      <figure><img src="img/vw-engine.jpg" srcset="img/vw-engine-720.jpg 720w, img/vw-engine.jpg 1440w" sizes="(max-width:700px) 78vw, 380px" alt="Work under the bonnet of a blue Volkswagen" width="1440" height="1440" loading="lazy"><figcaption>Under the bonnet of a VW</figcaption></figure>
       <figure><img src="img/fireblade.jpg" srcset="img/fireblade-720.jpg 720w, img/fireblade.jpg 1024w" sizes="(max-width:700px) 78vw, 380px" alt="Honda Fireblade in Repsol colours among other bikes in the workshop" width="1024" height="768" loading="lazy"><figcaption>Honda Fireblade in for work</figcaption></figure>
       <figure><img src="img/evo-engine.jpg" srcset="img/evo-engine-720.jpg 720w, img/evo-engine.jpg 1440w" sizes="(max-width:700px) 78vw, 380px" alt="Mitsubishi engine bay with red cam cover" width="1440" height="810" loading="lazy"><figcaption>Mitsubishi Evo engine bay</figcaption></figure>
-      <figure><img src="img/suzuki-rgv.jpg" srcset="img/suzuki-rgv-720.jpg 720w, img/suzuki-rgv.jpg 1024w" sizes="(max-width:700px) 78vw, 380px" alt="Suzuki RGV250 two-stroke sports bike" width="1024" height="768" loading="lazy"><figcaption>Suzuki RGV two-stroke</figcaption></figure>
-      <figure><img src="img/reception.jpg" srcset="img/reception-720.jpg 720w, img/reception.jpg 1440w" sizes="(max-width:700px) 78vw, 380px" alt="Oldfield Motor Services reception with the company banner" width="1440" height="1178" loading="lazy"><figcaption>Reception at Unit 18</figcaption></figure>
     </div>
   </div>
 </section>
+
+<section class="team" aria-labelledby="team-h">
+  <div class="wrap">
+    <div>
+      <h2 id="team-h">Meet the team</h2>
+      <p class="intro">The faces behind the spanners at Unit 18.</p>
+    </div>
+    <div class="team-grid">
+      <figure><img src="img/team-ryan.jpg" srcset="img/team-ryan-720.jpg 720w, img/team-ryan.jpg 1066w" sizes="(max-width:700px) 80vw, 340px" alt="Illustration of Ryan in Oldfield Motor Services workwear holding a Snap-on toolbox" width="1066" height="1600" loading="lazy"><figcaption><b>Ryan</b>Owner</figcaption></figure>
+      <figure><img src="img/team-jordan.jpg" srcset="img/team-jordan-720.jpg 720w, img/team-jordan.jpg 1024w" sizes="(max-width:700px) 80vw, 340px" alt="Illustration of Jordan in Oldfield Motor Services workwear holding a Snap-on toolbox" width="1024" height="1536" loading="lazy"><figcaption><b>Jordan</b>Part of the team</figcaption></figure>
+    </div>
+  </div>
+</section>
+
 
 <section class="book" id="book">
   <div class="wrap">
@@ -398,6 +428,9 @@ footer p+p{margin-top:4px}
         <div class="field">
           <label for="b-date">Preferred day</label>
           <input id="b-date" name="date" type="date">
+        </div>
+        <div class="field full">
+          <label class="check"><input type="checkbox" name="courtesy" value="yes"> I'd like the courtesy car if it's free</label>
         </div>
         <div class="field full">
           <label for="b-msg">Anything else we should know?</label>
@@ -488,6 +521,7 @@ document.getElementById('bookForm').addEventListener('submit', function(e){
     'Job: ' + f.get('job')
   ];
   if (f.get('date')) lines.push('Preferred day: ' + new Date(f.get('date')).toLocaleDateString('en-GB', {timeZone:'UTC', weekday:'long', day:'numeric', month:'long', year:'numeric'}));
+  if (f.get('courtesy')) lines.push('Courtesy car: yes please, if it is free');
   if (f.get('msg')) lines.push('Notes: ' + f.get('msg'));
   window.location.href = 'https://wa.me/447910600543?text=' + encodeURIComponent(lines.join('\n'));
 });
