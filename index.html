@@ -24,6 +24,7 @@
   "telephone": "+44 1274 830310",
   "email": "oldfieldmotorservices@gmail.com",
   "address": {"@type": "PostalAddress", "streetAddress": "Unit 18, Denholme Business Centre, Halifax Road", "addressLocality": "Denholme, Bradford", "postalCode": "BD13 4EN", "addressCountry": "GB"},
+  "paymentAccepted": "Credit Card, Debit Card",
   "openingHoursSpecification": [
     {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:30"},
     {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "12:30"}
@@ -184,7 +185,7 @@ section{padding-block:clamp(64px,9vw,120px);scroll-margin-top:84px}
 /* Team */
 .team{padding-top:0}
 .team .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,5vw,72px);align-items:center}
-.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,3vw,32px)}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,3vw,32px)}
 .team figure{margin:0}
 .team img{width:100%;aspect-ratio:2/3;object-fit:cover;object-position:top;clip-path:var(--badge);background:#fff}
 .team figcaption{margin-top:14px;text-align:center;color:var(--grey);font-size:15px}
@@ -215,6 +216,11 @@ section{padding-block:clamp(64px,9vw,120px);scroll-margin-top:84px}
   .svc-list p{font-size:14px;line-height:1.45}
   .team figure .who b{font-size:20px}
 }
+
+.team .team-all{width:100%;height:auto;aspect-ratio:auto;object-fit:fill;clip-path:none;margin-top:28px;border-radius:14px}
+@media (max-width:700px){.team-grid{gap:10px}.team figure .who{font-size:13px;margin-top:8px}.team figure .who b{font-size:17px}}
+
+.pay{margin-top:14px;color:#D9DCD3;font-size:15px}
 
 /* Booking */
 .book{background:var(--panel);border-top:6px solid var(--lime)}
@@ -354,16 +360,16 @@ footer p+p{margin-top:4px}
     </figure>
     <div>
       <h2>What we do</h2>
-      <p class="intro">Everyday jobs and awkward ones. Not sure what's wrong? Ring and describe it, and Ryan will give you straight advice.</p>
+      <p class="intro">Everyday jobs and awkward ones, on cars, vans and commercials. All our work comes with a 12-month parts and labour warranty.</p>
       <ul class="svc-list">
         <li><h3>Servicing</h3><p>Services for all makes and models, with dealer-trained know-how for VW Group, Kia, Hyundai and Vauxhall.</p></li>
-        <li><h3>MOTs</h3><p>Book your MOT, often alongside a service. Customers tell us the price is spot on.</p></li>
+        <li><h3>MOTs</h3><p>Class 4 and Class 7 MOTs, for cars and vans up to 3,500kg. Book it alongside a service if you like.</p></li>
         <li><h3>Repairs and diagnostics</h3><p>Warning lights, strange noises, brakes, clutches, exhausts and suspension. Tracked down and fixed.</p></li>
         <li><h3>Air conditioning</h3><p>Air con servicing and regassing, so it blows cold again when you need it.</p></li>
         <li><h3>Turbos</h3><p>Turbo supply and fitting.</p></li>
         <li><h3>Wheel alignment</h3><p>Four-wheel alignment on our Supertracker laser aligner, to stop uneven tyre wear and pulling.</p></li>
         <li><h3>Welding</h3><p>Specialist welding and repairs, done properly, even when it means working late.</p></li>
-        <li><h3>Recovery</h3><p>Broken down nearby? Ring 01274 830310 and ask about recovery to the workshop.</p></li>
+        <li><h3>Recovery</h3><p>Broken down within about 10 miles of Denholme? Ring 01274 830310 and we'll recover it to the workshop.</p></li>
         <li><h3>Vans and commercials</h3><p>Vans and commercial vehicles as well as cars, as it says on our sign. Keeping your van on the road keeps you earning.</p></li>
       </ul>
       <div class="brands">
@@ -453,10 +459,12 @@ footer p+p{margin-top:4px}
     <div>
       <h2 id="team-h">Meet the team</h2>
       <p class="intro">The faces behind the spanners at Unit 18.</p>
+      <img class="team-all" src="img/team-all.jpg" srcset="img/team-all-720.jpg 720w, img/team-all.jpg 1536w" sizes="(max-width:960px) 92vw, 420px" alt="Illustration of Ryan, Jake and Jordan together in the Oldfield workshop" width="1536" height="1024" loading="lazy">
     </div>
     <div class="team-grid">
-      <figure><img src="img/team-ryan.jpg" srcset="img/team-ryan-720.jpg 720w, img/team-ryan.jpg 1066w" sizes="(max-width:700px) 80vw, 340px" alt="Illustration of Ryan in Oldfield Motor Services workwear holding a Snap-on toolbox" width="1066" height="1600" loading="lazy"><p class="who"><b>Ryan</b>Owner</p></figure>
-      <figure><img src="img/team-jordan.jpg" srcset="img/team-jordan-720.jpg 720w, img/team-jordan.jpg 1024w" sizes="(max-width:700px) 80vw, 340px" alt="Illustration of Jordan in Oldfield Motor Services workwear holding a Snap-on toolbox" width="1024" height="1536" loading="lazy"><p class="who"><b>Jordan</b>Technician</p></figure>
+      <figure><img src="img/team-ryan.jpg" srcset="img/team-ryan-720.jpg 720w, img/team-ryan.jpg 1066w" sizes="(max-width:700px) 30vw, 220px" alt="Illustration of Ryan in Oldfield Motor Services workwear holding a Snap-on toolbox" width="1066" height="1600" loading="lazy"><p class="who"><b>Ryan</b>Owner</p></figure>
+      <figure><img src="img/team-jordan.jpg" srcset="img/team-jordan-720.jpg 720w, img/team-jordan.jpg 1024w" sizes="(max-width:700px) 30vw, 220px" alt="Illustration of Jordan in Oldfield Motor Services workwear holding a Snap-on toolbox" width="1024" height="1536" loading="lazy"><p class="who"><b>Jordan</b>Technician</p></figure>
+      <figure><img src="img/team-jake.jpg" srcset="img/team-jake-720.jpg 720w, img/team-jake.jpg 870w" sizes="(max-width:700px) 30vw, 220px" alt="Illustration of Jake in Oldfield Motor Services workwear holding a Snap-on ratchet" width="870" height="1305" loading="lazy"><p class="who"><b>Jake</b>Technician</p></figure>
     </div>
   </div>
 </section>
@@ -521,6 +529,7 @@ footer p+p{margin-top:4px}
         <tr data-day="6"><td>Saturday</td><td>9am to 12:30pm</td></tr>
         <tr data-day="0"><td>Sunday</td><td>Closed</td></tr>
       </table>
+      <p class="pay">We take card payments.</p>
 
       <ul class="contact">
         <li><a href="tel:+441274830310"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span><small>Workshop</small><b>01274 830310</b></span></a></li>
