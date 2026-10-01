@@ -222,6 +222,10 @@ section{padding-block:clamp(64px,9vw,120px);scroll-margin-top:84px}
 
 .pay{margin-top:14px;color:#D9DCD3;font-size:15px}
 
+.why{list-style:none;margin:22px 0 30px;padding:0;display:grid;gap:10px}
+.why li{position:relative;padding-left:32px;font-weight:700;color:var(--concrete-ink);line-height:1.35}
+.why li::before{content:"";position:absolute;left:0;top:1px;width:20px;height:20px;border-radius:50%;background:var(--lime) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z' fill='%23111'/%3E%3C/svg%3E") center/14px no-repeat}
+
 /* Booking */
 .book{background:var(--panel);border-top:6px solid var(--lime)}
 .book .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(36px,6vw,90px);align-items:start}
@@ -361,6 +365,13 @@ footer p+p{margin-top:4px}
     <div>
       <h2>What we do</h2>
       <p class="intro">Everyday jobs and awkward ones, on cars, vans and commercials. All our work comes with a 12-month parts and labour warranty.</p>
+      <ul class="why">
+        <li>Personal, honest advice</li>
+        <li>No hidden fees, competitive prices</li>
+        <li>Quick turnaround and flexible appointments</li>
+        <li>Local collection and drop-off</li>
+        <li>A family-run garage at the heart of the community</li>
+      </ul>
       <ul class="svc-list">
         <li><h3>Servicing</h3><p>Services for all makes and models, with dealer-trained know-how for VW Group, Kia, Hyundai and Vauxhall.</p></li>
         <li><h3>MOTs</h3><p>Class 4 and Class 7 MOTs, for cars and vans up to 3,500kg. Book it alongside a service if you like.</p></li>
